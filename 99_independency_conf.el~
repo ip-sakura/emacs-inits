@@ -1,0 +1,10 @@
+(require 'org)
+(define-key org-mode-map (kbd "C-<") nil);;; org-modeでhomeに飛ぶkeyを無効にする。
+(define-key org-mode-map (kbd "C-,") nil) ;;; xxx上記の補助だが、不要かもしれない。
+
+(setq column-number-mode t) ;; show column
+(keyboard-translate ?\C-h ?\C-?) ;; command-h means delete back.
+(global-set-key (kbd "M-/") 'comment-or-uncomment-region)
+
+(set-frame-font "Monospace 18" nil t)
+(global-linum-mode t)
