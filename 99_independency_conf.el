@@ -16,3 +16,7 @@
 
 (set-frame-font "Monospace 18" nil t)
 (global-linum-mode t)
+
+(delete-selection-mode t) ;; Insert selected region
+
+(define-key global-map [?¥] [?\\])  ;; ¥の代わりにバックスラッシュを入力する

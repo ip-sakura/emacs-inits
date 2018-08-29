@@ -1,7 +1,0 @@
-
-(setq column-number-mode t) ;; show column
-(keyboard-translate ?\C-h ?\C-?) ;; command-h means delete back.
-(global-set-key (kbd "M-/") 'comment-or-uncomment-region)
-
-(set-frame-font "Monospace 18" nil t)
-(global-linum-mode t)
